@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Only Us</title><meta name="theme-color" content="#641F25">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Allura&family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css"></head>
+<body>
+<div id="stage">
+  <div id="vinyl" tabindex="0" role="button" aria-label="Vinyl record. Press and hold, or press Enter, to pause the animation">
+    <div id="disk"><div class="label"><span class="a">SIDE A</span><span class="b">33⅓ RPM</span><span class="c">STEREO</span><i></i></div></div>
+  </div>
+</div>
+<div id="pauseTag" hidden>❚❚ Paused</div>
+<header id="hero">
+  <h1>Only <span>Us</span></h1>
+  <p class="sub">Every moment feels a little <b>brighter</b> when it’s <b>just us</b></p>
+  <a class="scroll" href="#story" aria-label="Scroll down"></a>
+</header>
+<main id="story"></main>
+<section id="credits" aria-label="Closing credits"></section>
+<div id="timer" aria-label="Time since we began"><div class="t0">♡ SINCE US ♡</div><div id="t1">–</div><div id="t2"></div></div>
+<div id="controls">
+  <button id="refresh" aria-label="Refresh photos">↻</button>
+  <button id="music" aria-label="Play music"><span class="disc"></span></button>
+</div>
+<div id="status" role="status" aria-live="polite"></div>
+<div id="lb" hidden role="dialog" aria-modal="true" aria-label="Photo viewer">
+  <button id="lbx" class="lbb" aria-label="Close">×</button>
+  <button id="lbp" class="lbb" aria-label="Previous photo">‹</button>
+  <figure><img id="lbi" alt="" draggable="false"><figcaption id="lbc"></figcaption></figure>
+  <button id="lbn" class="lbb" aria-label="Next photo">›</button>
+</div>
+<audio id="audio" preload="none" loop></audio>
+<script src="config.js"></script><script src="script.js"></script>
+</body></html>
